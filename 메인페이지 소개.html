@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>메인페이지</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .highlight {
+      background-color: lightyellow;
+      border: 2px solid orange;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1 onclick="alert('메인페이지를 클릭하셨습니다')">메인페이지입니다.</h1> <!-- onclick -->
+
+  <section 
+    onmouseover="this.style.backgroundColor='lavender'" 
+    onmouseleave="this.style.backgroundColor=''" 
+    class="highlight">
+    <h2>학과 소개 - 한성대학교 미래인재학부</h2>
+    <p>
+      미래인재학부는 전 산업 분야 신산업 역량을 배양하고 재직자의 AI 역량을 향상시켜 디지털 분야 전문인재 양성을 목적으로 합니다.
+      수업은 토요일마다 있고, 2024년 신설된 학과이며, 미래에 필요한 AI와 소프트웨어를 배우는 학과입니다.
+    </p>
+  </section>
+
+  <section 
+    onmousedown="this.style.color='green'""
+    onmouseup="this.style.color=''" 
+    class="highlight">
+    <h2>회사 소개 - 동탄이엔지</h2>
+    <p>
+      반도체 제조용 기계(ESC) 제조업입니다.
+      제품으로는 반도체 장비 부품, 액정 표시 장치, 절연 제품, 전자제품 제조입니다.
+      직원은 총 100명 정도 있고, 작년 기준 매출액은 300억입니다.
+    </p>
+  </section>
+</body>
+</html>

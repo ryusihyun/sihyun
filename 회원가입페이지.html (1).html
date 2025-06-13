@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>회원 가입</title>
+<style>
+    /*회원 가입 페이지 만들기 */
+ body { background-color: aliceblue;
+        color :darkblue}
+    hr{ border : violet}
+    h3{ text-align: center;
+        color:black;}
+</style>
+</head>
+<body>
+<h3>회원 가입 페이지</h3>    
+<hr>
+    <fieldset>
+        <legend>가입자정보</legend>
+        사용자 ID       :      <input type="email"><br>
+        Password :  <input type="password"><br>
+        전화번호  :     <input type="tel">
+    
+    <hr>
+        <select name="gender">
+    <option value="1">성별</option>        
+    <option value="2">남자</option>
+    <option value="3">여자</option>
+    </select>
+    <hr>
+    <label for="age">나이 선택:</label>
+<select id="age" name="age">
+  <option value="">-- 나이를 선택하세요 --</option>
+  <option value="20">20세</option>
+  <option value="21">21세</option>
+  <option value="22">22세</option>
+  <option value="23">23세</option>
+  <option value="24">24세</option>
+  <option value="25">25세</option>
+  <option value="26">26세</option>
+  <option value="27">27세</option>
+  <option value="28">28세</option>
+  <option value="29">29세</option>
+  <option value="30">30세</option>
+  <option value="31">31세</option>
+   <option value="32">32세</option>
+  <option value="33">33세</option>
+    <option value="34">34세</option>
+    <option value="35">35세</option>
+    <option value="36">36세</option>
+    <option value="100">그 이상</option>
+
+</select>
+    <hr>
+    <tr><td>생년월일</td>
+    <td><input type="date" value="2001-09-18"></td></tr>
+</form>
+</fieldset>
+</body>
+</html>

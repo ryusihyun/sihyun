@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>회원 가입</title>
+  <style>
+    body { background-color: aliceblue; color: darkblue; }
+    hr { border: violet; }
+    h3 { text-align: center; color: black; }
+  </style>
+</head>
+<body>
+  <h3>회원 정보 출력</h3>
+  <hr>
+
+  <fieldset>
+    <legend>가입자정보</legend>
+    사용자 ID: <input type="email" id="email"><br>
+    비밀번호 : <input type="password" id="password"><br>
+    전화번호: <input type="tel" id="phone"><br>
+    집 주소 :   <input type="address" id="address"><br>
+
+    <select id="gender">
+      <option value="">성별</option>        
+      <option value="남자">남자</option>
+      <option value="여자">여자</option>
+      <option value="그 외">그 외</option>
+    </select><br><br>
+
+    <button onclick="showInfo()">회원정보 출력</button>
+  </fieldset>
+
+  <hr>
+  <div id="output"></div>
+
+  <script>
+    function showInfo() {
+      const email = document.getElementById('email').value;
+      const password = document.getElementById('password').value;
+      const phone = document.getElementById('phone').value;
+      const gender = document.getElementById('gender').value;
+      const address = document.getElementById('address').value;
+
+      if (!email || !password || !phone || !gender) {
+        alert('모든 정보를 입력하세요!!!!!');
+        return;
+      }
+
+      document.getElementById('output').innerHTML = `
+        <h4>입력한 회원 정보</h4>
+        <p><strong>사용자 ID:</strong> ${email}</p>
+        <p><strong>비밀번호:</strong> ${'*'.repeat(password.length)}</p>
+        <p><strong>전화번호:</strong> ${phone}</p>
+        <p><strong>성별:</strong> ${gender}</p>
+        <p><strong>집주소</strong> ${address}</p>
+      `;
+    }
+  </script>
+</body>
+</html>
